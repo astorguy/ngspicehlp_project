@@ -1,6 +1,5 @@
 """__init__.py"""
 from .analyses import Analyses
-from .config import Config
 from .control import Control
 from .kicad import KicadCmd
 from .netlist import Netlist
@@ -13,7 +12,6 @@ from .vectors import Vectors
 
 __all__ = (
     "Analyses",
-    "Config",
     "Control",
     "KicadCmd",
     "Netlist",
