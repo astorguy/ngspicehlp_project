@@ -39,4 +39,4 @@ A main Python program controls the flow. An example can be found [here](https://
 
 1. Download the ngspicehlp package
 
-1. Download this [bipolar amplifier circuit](https://google.com) example. Make sure ngspicehlp package is accessable and import it into the main program.
+1. Download this [bipolar amplifier circuit](https://github.com/astorguy/bc546_amp) example. Make sure ngspicehlp package is accessable and import it into the main program.
