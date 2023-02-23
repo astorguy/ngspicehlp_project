@@ -11,10 +11,24 @@ class Vectors:
 
     def __init__(self, vector: list[str | int]):
         self.vector: list[str] = [str(signal) for signal in vector]
+        self._words_to_items()
         self._remove_dups()
 
     def __str__(self) -> str:
         return " ".join(self.vector)
+
+    def _words_to_items(self) -> None:
+        """Convert words separated by spaces into separate list items"""
+        my_list = []
+        for item in self.vector:
+            if " " in item:
+                # Split the string into multiple items
+                split_items = item.split(" ")
+                # Add the new items to the new list
+                my_list.extend(split_items)
+            else:
+                my_list.append(item)
+        self.vector = my_list
 
     def _remove_dups(self) -> None:
         """remove duplicate signals"""
