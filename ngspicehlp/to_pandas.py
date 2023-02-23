@@ -6,6 +6,33 @@ import pandas as pd
 from .analyses import Analyses
 
 
+def _op_to_pandas(my_filename: Path) -> pd.DataFrame:
+    """converts the op (operating point) results to a Pandas DF
+
+    Args:
+        my_filename (Path): the op file
+
+    Returns:
+        pd.DataFrame:
+    """
+    # create an empty dictionary
+    my_dict = {}
+
+    # read the text file and split the lines by newline
+    file_text: str = my_filename.read_text()
+    lines: list[str] = file_text.split("\n")
+
+    # create a dictionary to store the key-value pairs
+    for line in lines:
+        if line:
+            key, value = line.split("=")
+            key = key.replace(" ", "")
+            value = value.replace(" ", "")
+            my_dict[key] = float(value)
+
+    return pd.DataFrame.from_dict(my_dict, orient="index", columns=["Value"])
+
+
 def to_pandas(
     results_loc: Path,
     list_analyses: list[Analyses],
@@ -24,10 +51,7 @@ def to_pandas(
     for analysis in list_analyses:
         results_filename: Path = results_loc / f"{analysis.name}.txt"
         if analysis.cmd_type == "op":
-            this_df = pd.read_csv(
-                results_filename, header=3, skiprows=[4], delim_whitespace=True
-            )
-            this_df = this_df.drop("Index", axis=1)
+            this_df = _op_to_pandas(results_filename)
         else:
             this_df: pd.DataFrame = pd.read_csv(results_filename, delim_whitespace=True)
         list_df.append(this_df)

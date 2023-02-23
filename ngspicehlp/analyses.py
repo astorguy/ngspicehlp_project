@@ -33,7 +33,7 @@ class Analyses:
         if self.cmd_type == "dc":
             self.vec_output = f"wrdata {results_filename} {vector}"
         if self.cmd_type == "op":
-            self.vec_output = f"print col {vector} > {results_filename}"
+            self.vec_output = f"print line {vector} > {results_filename}"
         if self.cmd_type == "tran":
             self.vec_output = f"wrdata {results_filename} {vector}"
 
