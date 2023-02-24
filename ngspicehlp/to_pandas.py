@@ -16,7 +16,7 @@ def _op_to_pandas(my_filename: Path) -> pd.DataFrame:
         pd.DataFrame:
     """
     # create an empty dictionary
-    my_dict = {}
+    my_dict: dict[str, float] = {}
 
     # read the text file and split the lines by newline
     file_text: str = my_filename.read_text()
@@ -51,9 +51,9 @@ def to_pandas(
     for analysis in list_analyses:
         results_filename: Path = results_loc / f"{analysis.name}.txt"
         if analysis.cmd_type == "op":
-            this_df = _op_to_pandas(results_filename)
+            this_df: pd.DataFrame = _op_to_pandas(results_filename)
         else:
-            this_df: pd.DataFrame = pd.read_csv(results_filename, delim_whitespace=True)
+            this_df = pd.read_csv(results_filename, delim_whitespace=True)
         list_df.append(this_df)
 
         # Want to delete raw text files after converting to Pandas?

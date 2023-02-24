@@ -5,9 +5,9 @@ from typing import TypeAlias, Optional, Literal
 import pandas as pd
 import numpy as np
 import numpy.typing as npt
-import matplotlib.figure as fig
-import matplotlib.pyplot as plt
-import matplotlib.style
+import matplotlib.figure as fig  # type: ignore
+import matplotlib.pyplot as plt  # type: ignore
+import matplotlib.style  # type: ignore
 from .vectors import Vectors
 
 # type aliases
