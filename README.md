@@ -15,7 +15,7 @@ Ngspice can be used in many different ways. However, Ngspice Helper will interfa
 
 
 # Typical Program Flow
-A main Python program controls the flow. An example can be found [here](https://google.com)
+A main Python program controls the flow. An example can be found [here](https://github.com/astorguy/bc546_amp)
 
 1. import ngspicehlp
 
@@ -37,6 +37,8 @@ A main Python program controls the flow. An example can be found [here](https://
 
 # Installation
 
-1. Download the ngspicehlp package
+1. install package:
 
-1. Download this [bipolar amplifier circuit](https://github.com/astorguy/bc546_amp) example. Make sure ngspicehlp package is accessable and import it into the main program.
+`python -m pip install git+https://github.com/astorguy/ngspicehlp_project`
+
+2. Download this [example](https://github.com/astorguy/bc546_amp) (a bipolar amplifier) to try out the `ngspicehlp` package.
