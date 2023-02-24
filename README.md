@@ -2,7 +2,7 @@
 Lightweight Python interface to ngspice
 
 # Movtivation
-[Ngspice](https://ngspice.sourceforge.io/) is an open source circuit simulator with a command line interface (CLI). It's natural to use Python as an inteface to the CLI, making it easier to access ngspice for advanced design analysis.
+[Ngspice](https://ngspice.sourceforge.io/) is an open source circuit simulator with a command line interface (CLI). It's natural to use Python to interact with the CLI, making it easier to use ngspice for advanced design analysis.
 
 There exists a simulator called [PySpice](https://github.com/PySpice-org/PySpice) which embeds ngspice through its API. Ngspice Helper, on the other hand, is a lightweight module that facilitates ngspice interaction. Simple classes and functions transparently create ngspice netlists and commands. You can launch multiple analyses and convert the results to [Pandas](https://pandas.pydata.org/) and [Numpy](https://numpy.org/), enabling downstream computation or plotting with [Matplotlib](https://matplotlib.org/).
 
@@ -15,7 +15,7 @@ Ngspice can be used in many different ways. However, Ngspice Helper will interfa
 
 
 # Typical Program Flow
-A main Python program controls the flow. An example can be found [here](https://github.com/astorguy/bc546_amp)
+A main Python program controls the flow. An example can be found [here](https://github.com/astorguy/bc546_amp).
 
 1. import ngspicehlp
 
@@ -27,11 +27,11 @@ A main Python program controls the flow. An example can be found [here](https://
 
 1. Define one or more analyses (op, dc, tr, ac) with Analyses objects
 
-1. A Control Object defines the control section. The analyses and other control functions are part of it.
+1. A Control object defines the control section. The analyses and other control functions are part of it.
 
 1. A Simulation Object is created and executed.
 
-1. The tabular results from the simulation is converted to Pandas DataFrames
+1. The tabular results from the simulation are converted to Pandas DataFrames
 
 1. A Plot object can be used to encapsulate Matplotlib to view the results.
 
