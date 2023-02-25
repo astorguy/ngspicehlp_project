@@ -14,4 +14,4 @@ keywords = ["ngspice", "spice", "simulation"]
 classifiers = ["Programming Language :: Python :: 3"]
 
 [project.urls]
-repository = "https://github.com/me/spam.git"
+repository = "https://github.com/astorguy/ngspicehlp_project"
