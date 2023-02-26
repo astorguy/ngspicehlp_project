@@ -14,12 +14,12 @@ class KicadCmd:
         self.sch_filename: Path = sch_filename
         self.netlist_filename: Path = netlist_filename
 
-        self.cmd_args = ["kicad-cli.exe"]
+        self.cmd_args = [f"{self.kicad_cmd}"]
         self.cmd_args.append("sch")
         self.cmd_args.append("export netlist")
         self.cmd_args.append(f"--output {self.netlist_filename}")
         self.cmd_args.append("--format spice")
-        self.cmd_args.append(str(self.sch_filename))
+        self.cmd_args.append(f"{self.sch_filename}")
         self.cmd: str = " ".join(str(item) for item in self.cmd_args)
 
     def __str__(self) -> str:
