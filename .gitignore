@@ -1,3 +1,15 @@
-/src/ngspicehlp/__pycache__
+src/ngspicehlp/__pycache__
+src/ngspicehlp/__pycache__/*
 /src/ngspicehlp/.mypy_cache
 src/ngspicehlp/__pycache__/__init__.cpython-311.pyc
+src/ngspicehlp/__pycache__/analyses.cpython-311.pyc
+src/ngspicehlp/__pycache__/control.cpython-311.pyc
+src/ngspicehlp/__pycache__/kicad.cpython-311.pyc
+src/ngspicehlp/__pycache__/netlist.cpython-311.pyc
+src/ngspicehlp/__pycache__/plot.cpython-311.pyc
+src/ngspicehlp/__pycache__/print_section.cpython-311.pyc
+src/ngspicehlp/__pycache__/simulate.cpython-311.pyc
+src/ngspicehlp/__pycache__/to_pandas.cpython-311.pyc
+src/ngspicehlp/__pycache__/vectors.cpython-311.pyc
+tests/__pycache__/__init__.cpython-311.pyc
+tests/__pycache__/test_kicad.cpython-311-pytest-7.2.1.pyc
