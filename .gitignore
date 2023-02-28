@@ -1,2 +1,3 @@
-src/ngspicehlp/__pycache__
-src/ngspicehlp/.mypy_cache
+/src/ngspicehlp/__pycache__
+/src/ngspicehlp/.mypy_cache
+src/ngspicehlp/__pycache__/__init__.cpython-311.pyc
