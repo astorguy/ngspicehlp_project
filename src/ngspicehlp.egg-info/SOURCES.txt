@@ -11,10 +11,11 @@ src/ngspicehlp/oscilloscope.mplstyle
 src/ngspicehlp/plot.py
 src/ngspicehlp/print_section.py
 src/ngspicehlp/simulate.py
-src/ngspicehlp/test_kicad.py
 src/ngspicehlp/to_pandas.py
 src/ngspicehlp/vectors.py
 src/ngspicehlp.egg-info/PKG-INFO
 src/ngspicehlp.egg-info/SOURCES.txt
 src/ngspicehlp.egg-info/dependency_links.txt
 src/ngspicehlp.egg-info/top_level.txt
+tests/__init__.py
+tests/test_kicad.py
