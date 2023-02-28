@@ -39,6 +39,6 @@ A main Python program controls the flow. An example can be found [here](https://
 
 1. install package:
 
-`python -m pip install git+https://github.com/astorguy/ngspicehlp_project`
+`python -m pip install --upgrade ngspicehlp`
 
 2. Download this [example](https://github.com/astorguy/bc546_amp) (a bipolar amplifier) to try out the `ngspicehlp` package.
