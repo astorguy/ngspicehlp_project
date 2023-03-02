@@ -13,5 +13,9 @@ license = { text = "MIT License" }
 keywords = ["ngspice", "spice", "simulation"]
 classifiers = ["Programming Language :: Python :: 3"]
 
+# recommended setting from pytest docs
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+
 [project.urls]
 repository = "https://github.com/astorguy/ngspicehlp_project"
