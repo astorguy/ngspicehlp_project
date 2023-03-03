@@ -22,11 +22,3 @@ def test_kicad_cmd_str():
 
     kicad_cmd1 = ng.KicadCmd(PATH1, PATH2, PATH3)
     assert str(kicad_cmd1) == good_cmd
-
-
-def main() -> None:
-    """main"""
-
-
-if __name__ == "__main__":
-    main()
