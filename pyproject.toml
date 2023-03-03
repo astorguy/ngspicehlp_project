@@ -13,6 +13,9 @@ license = { text = "MIT License" }
 keywords = ["ngspice", "spice", "simulation"]
 classifiers = ["Programming Language :: Python :: 3"]
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
 # recommended setting from pytest docs
 [tool.pytest.ini_options]
 addopts = ["--import-mode=importlib"]
