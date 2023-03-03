@@ -15,6 +15,7 @@ classifiers = ["Programming Language :: Python :: 3"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["ngspicehlp"]
 
 # recommended setting from pytest docs
 [tool.pytest.ini_options]

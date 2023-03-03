@@ -32,3 +32,4 @@ src/ngspicehlp/__pycache__/to_pandas.cpython-311.pyc
 src/ngspicehlp/__pycache__/vectors.cpython-311.pyc
 tests/__init__.py
 tests/test_kicad.py
+tests/test_vectors.py
