@@ -49,7 +49,11 @@ class Vectors:
         self.__vect = no_dups
 
     def list_out(self) -> list[str]:
-        """Outputs vector as a list"""
+        """Outputs vector as a list
+
+        Returns:
+            list[str]:
+        """
         return self.__vect
 
     def sort(self) -> None:
@@ -57,13 +61,22 @@ class Vectors:
         self.__vect = sorted(self.__vect)
 
     def union(self: T, *vecs: T) -> None:
-        """Combine the vector object with others passed in"""
+        """Combine the vector object with others passed in
+
+        Args:
+            *vecs (vectors): one or more vectors to union
+        """
         for vec in vecs:
             self.__vect = self.__vect + vec.list_out()
             self._remove_dups()
 
     def subtract(self: T, vec2: T) -> None:
-        """Remove from this vector the signals in the second one"""
+        """Remove from this vector the signals in the second one
+
+        Args:
+            self (vectors): vector to subtract from
+            vec2 (vectors): vector to subtract out
+        """
         list1 = self.list_out()
         list2 = vec2.list_out()
         self.__vect = [item for item in list1 if item not in list2]
