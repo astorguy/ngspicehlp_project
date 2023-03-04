@@ -15,8 +15,6 @@ import ngspicehlp as ng
         ("sig1  sig3    sig2", "Vectors(['sig1', 'sig3', 'sig2'])"),
         (501, "Vectors(['501'])"),
         ("sig1 sig3 sig2 sig3 sig1", "Vectors(['sig1', 'sig3', 'sig2'])"),
-        # (["sig2", "sig1", "sig4", "sig1"], "sig2 sig1 sig4"),
-        # (["sig1 sig2", "sig3"], "sig1 sig2 sig3"),
     ],
 )
 def test_vectors_input(vec_input, expected_from_inputs):
