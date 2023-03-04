@@ -28,7 +28,7 @@ class Vectors:
 
     def _words_to_items(self) -> None:
         """Convert words separated by spaces into separate list items"""
-        my_list = []
+        my_list: list[str] = []
         for item in self.__vect:
             if " " in item:
                 # Split the string into multiple items
